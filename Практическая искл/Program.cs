@@ -11,6 +11,17 @@ namespace Практическая_искл
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Введите целое число:");
+
+            try
+            {
+                int a = int.Parse(Console.ReadLine());
+                Console.WriteLine("Вы ввели число: " + a);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Ошибка: введено не целое число!");
+            }
         }
     }
 }
